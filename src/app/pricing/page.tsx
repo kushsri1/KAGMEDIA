@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
 import { PiCheckCircleFill } from "react-icons/pi";
-import React, { useState } from 'react'
 import Navbar from '../components/Navbar';
 
 const plans = [

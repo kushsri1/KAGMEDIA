@@ -7,14 +7,14 @@ export async function POST(req: Request) {
     if (req.method === "POST") {
         try {
             const {
-    first_name,
-    last_name,
-    email,
-    company_name,
-    company_size,
-    help,
-    services,
-    info,
+                first_name,
+                last_name,
+                email,
+                company_name,
+                company_size,
+                help,
+                services,
+                info,
             } = await req.json();
             const transporter = nodemailer.createTransport({
                 host: "smtp.gmail.com",
@@ -22,7 +22,7 @@ export async function POST(req: Request) {
                 secure: true,
                 auth: {
                     user: "kagmedia0@gmail.com",
-                    pass: "zmpb xytg bayz dkna"
+                    pass: "anyw qvll cevl xwqf"
                 }
             });
 
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
                 from: email,
                 to: "kagmedia0@gmail.com",
                 subject: "Contact Form Submission",
-                html:  `
+                html: `
                 <h1>Contact Form</h1>
                 <p>First Name: ${first_name}</p>
                 <p>Last Name: ${last_name}</p>
@@ -45,12 +45,15 @@ export async function POST(req: Request) {
             }
 
 
-await transporter.sendMail(mailOptions);
-return NextResponse.json("Email has been sent!")
-} catch (error) {
-        return NextResponse.json("Email has not been sent!")
-}
-} else {
-    return NextResponse.json("Method now allowed!")
-}
+            await transporter.sendMail(mailOptions);
+            console.log("Email Sent", info.resonse);
+
+            return NextResponse.json("Email has been sent!")
+        } catch (error) {
+            return NextResponse.json("Email has not been sent!")
+            console.log(error);
+        }
+    } else {
+        return NextResponse.json("Method now allowed!")
+    }
 };

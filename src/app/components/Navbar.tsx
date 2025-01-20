@@ -1,5 +1,4 @@
 "use client"
-import { motion } from 'framer-motion'
 import { AlignJustify, X } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'

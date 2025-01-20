@@ -18,7 +18,7 @@ const GraphicDesign = () => {
         <div className='md:flex items-center justify-center md:mx-auto md:space-x-10'>
             <motion.div
             initial={{y:100, opacity: 0}}
-            animate={{Y:0, opacity: 1}}
+            animate={{y:0, opacity: 1}}
             className='px-10 md:px-0'
             >
                 <ThreeDCardExample />
@@ -26,7 +26,7 @@ const GraphicDesign = () => {
 
             <motion.div
             initial={{y:100, opacity: 0}}
-            animate={{Y:0, opacity: 1}}
+            animate={{y:0, opacity: 1}}
             className='px-10 md:px-0'
             >
                 <EvervaultCardSnippets />
