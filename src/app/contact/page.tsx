@@ -28,8 +28,8 @@ export default function ContactForm() {
     job_title: "",
     company_name: "",
     company_size: "1-10",
-    help: "Learn More",
     services: "Website Development",
+    help: "Learn More",
     info: "",
     terms: false,
   });
@@ -187,7 +187,7 @@ export default function ContactForm() {
               <select name="help" value={formData.help} onChange={handleChange} id="help" className=" w-full border rounded-md py-1">
                 <option value="Need More" className=" w-full border rounded-md py-1">Need More</option>
                 <option value="Learn More">Learn More</option>
-                <option value="Running Ads">Asking About Planning</option>
+                <option value="Asking About Planning">Asking About Planning</option>
                 <option value="Other">Other</option>
               </select>
             </div>

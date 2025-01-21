@@ -1,3 +1,5 @@
+import {config} from "dotenv"
+config();
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 export const runtime = 'nodejs';
@@ -21,8 +23,8 @@ export async function POST(req: Request) {
                 port: 465,
                 secure: true,
                 auth: {
-                    user: "kagmedia0@gmail.com",
-                    pass: "anyw qvll cevl xwqf"
+                    user: process.env.user,
+                    pass: process.env.pass,
                 }
             });
 
