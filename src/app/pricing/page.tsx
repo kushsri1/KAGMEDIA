@@ -12,6 +12,7 @@ const plans = [
         "Fully responsive on all screens",
         "Design + Development",
         "1-3 days turnaround time",
+        "Onky frontend"
       ],
       style:
         " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
@@ -57,6 +58,40 @@ const plans = [
       description:
         "Best for small businesses and startups that need a performant website that looks great and converts visitors to customers.",
       button: "Contact Us",
+    },
+    {
+      index: 3,
+      name: "Basic(Social Media Management)",
+      price: " US $199",
+      features: [
+        "Instagram Management",
+        "High quaity images and reels",
+        "12-15 post per month",
+        "5-6 stories per week",
+        "5-6 reels per month"
+      ],
+      style:
+        " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      description:
+        "Standalone components tailored to your needs and easily integrated. Perfect for website elements or sections.",
+      button: "Buy Now",
+    },
+    {
+      index: 4,
+      name: "Premium(Social Media Management)",
+      price: "US $350",
+      features: [
+        "Instagram Management + Facebook Management",
+        "High quaity images and reels",
+        "12-15 post per month",
+        "3-4 stories per week",
+        "5-6 reels per month"
+      ],
+      style:
+        " rounded-3xl  py-10 bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-50",
+      description:
+        "Best for early-stage startups, businesses, and freelancers that need a marketing side to showcase their work and vision.",
+      button: "Buy Now",
     },
   ];
 
@@ -114,7 +149,7 @@ const Pricing = () => {
                 <div className={plan.button}>
                   {index === 0 && (
                     <Link
-                      href="https://buy.stripe.com/6oEg1WdsibFr1EYbIK"
+                      href="https://www.paypal.com/ncp/payment/345RMU4TYJWFG"
                       className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
                     >
                       Buy Now
@@ -123,7 +158,7 @@ const Pricing = () => {
                     {index === 1 && (
                       <Link
                         
-                        href="https://buy.stripe.com/14k2b65ZQ8tf5Ve28c"  
+                        href="https://www.paypal.com/ncp/payment/WW2YD643Q3HW8"  
                         className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300" 
                       >
                         Buy Now
@@ -138,6 +173,23 @@ const Pricing = () => {
                           Contact Us
                         </Link>
                     )}  
+                    {index === 3 && (
+                    <Link
+                      href="https://www.paypal.com/ncp/payment/HZTRY73JT4AUE"
+                      className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300"
+                    >
+                      Buy Now
+                    </Link>
+                  )}
+                    {index === 4 && (
+                      <Link
+                        
+                        href="https://www.paypal.com/ncp/payment/69E2Z5ARM49EE"  
+                        className="rounded-3xl my-4  py-2 text-white w-full mx-auto items-center flex justify-center bg-gradient-to-r from-emerald-500 to-blue-300" 
+                      >
+                        Buy Now
+                        </Link>
+                    )}
                 </div>
               </div>
             ))}

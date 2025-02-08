@@ -10,6 +10,7 @@ import SocialMedia from './social-management'
 import Brand from './brand';
 import Services from './services'
 import Faq from './faq'
+import FreeTraial from './FreeTraial'
 
 export default function Home() {
   const websiteDesignRef = useRef<HTMLDivElement>(null)
@@ -82,6 +83,7 @@ export default function Home() {
           </div>
 
           <div ref={socialMediaRef}>
+            <FreeTraial />
           <SocialMedia />
           </div>
 
